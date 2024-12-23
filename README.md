@@ -32,6 +32,10 @@ Experiment Results and Weights
 |    Exp-14      |    SegFormer-B2   |    Adam     |  Focal |      New       |       8      |    0.7061   |   0.6974  |    0.7017  | 0.5411 | [Download](https://drive.google.com/file/d/1nCRrwshORyxXxZtp0r2iZofEihj9SO_o/view?usp=sharing)| [Notebook](experiments/exp-14.ipynb)
 |    Exp-15      |  Unet++ TIMM [[2]](https://ieeexplore.ieee.org/document/9882054)  |    Adam     |  Dice  |      Old       |      16      |    0.5141   |   0.6970  |    0.5772  | 0.4199 | [Download](https://drive.google.com/file/d/1D1uozmGI-fPKwCAE-HwsY-u1oxcBBsuw/view?usp=sharing)| [Reference](https://ieeexplore.ieee.org/document/9882054)
 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/87e94ca1-de5d-4521-97e1-1dc8abd8203b" alt="Centered Image">
+</div>
+
 Dataset
 ---------------------
 The dataset used in this study are openly available at [here](https://urbanoccupations.ku.edu.tr/historical-road-types-for-turkey-1940s).
