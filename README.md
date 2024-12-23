@@ -1,7 +1,18 @@
 # Land Use and Land Cover Mapping Using Deep Learning Based Segmentation Approaches and VHR Worldview-3 Images
 This repository contains the code for the paper [Automatic Road Extraction from Historical Maps Using Transformer-Based SegFormers](https://www.mdpi.com/2220-9964/13/12/464)
 
+Aim
+---------------------
 
+In this research, we developed a novel approach to automatically extract five different road types from historical maps using transformer-based SegFormer models. We utilized a digitized dataset derived from Deutsche Heereskarte 1:200,000 Türkei maps to evaluate the effects of various encoders, batch sizes, loss functions, and augmentation techniques. The goal was to enhance the accuracy and efficiency of road segmentation from historical maps, surpassing the limitations of traditional CNN-based methods.
+
+Sample Outputs
+---------------------
+![sample_figure](https://github.com/user-attachments/assets/224ad592-bb67-47c7-97c8-ff6a915804b0)
+
+
+Experiment Results and Weights
+---------------------
 
 | Experiment No  |       Model       | Optimizer   |  Loss  | Augmentation   |  Batch Size  |  Precision  |   Recall  |  F1 Score  |   IoU  |  Weights  |
 |:--------------:|:-----------------:|:-----------:|:------:|:--------------:|:------------:|:-----------:|:---------:|:----------:|:------:|:---------:|
@@ -20,3 +31,15 @@ This repository contains the code for the paper [Automatic Road Extraction from 
 |    Exp-13      |    SegFormer-B2   |   AdamW     |  Focal |      New       |       8      |    0.6893   |   0.6960  |    0.6920  | 0.5297 | [Download](https://drive.google.com/file/d/1sDuFbgL--3NIKww84AwVDEt-Ylw0-SKw/view?usp=sharing)|
 |    Exp-14      |    SegFormer-B2   |    Adam     |  Focal |      New       |       8      |    0.7061   |   0.6974  |    0.7017  | 0.5411 | [Download](https://drive.google.com/file/d/1nCRrwshORyxXxZtp0r2iZofEihj9SO_o/view?usp=sharing)|
 |    Exp-15      |  Unet++ TIMM [2]  |    Adam     |  Dice  |      Old       |      16      |    0.5141   |   0.6970  |    0.5772  | 0.4199 | [Download](https://drive.google.com/file/d/1D1uozmGI-fPKwCAE-HwsY-u1oxcBBsuw/view?usp=sharing)|
+
+
+System-specific notes
+---------------------
+The code was implemented in Python(3.10.12) and PyTorch(2.1.2) on Windows OS. The implementation uses the *segmentation-models-pytorch*, *transformers* (Hugging Face), and *datasets* (Hugging Face) libraries for developing and evaluating the models.
+
+
+Citation
+---------------------
+Please kindly cite our paper if this code and the dataset used in the study is useful for your research.
+
+Sertel, E.; Hucko, C.M.; Kabadayı, M.E. Automatic Road Extraction from Historical Maps Using Transformer-Based SegFormers. ISPRS Int. J. Geo-Inf. 2024, 13, 464. https://doi.org/10.3390/ijgi13120464
