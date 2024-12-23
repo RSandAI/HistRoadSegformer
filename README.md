@@ -1,5 +1,5 @@
 # Land Use and Land Cover Mapping Using Deep Learning Based Segmentation Approaches and VHR Worldview-3 Images
-This repository contains the code for the paper [Automatic Road Extraction from Historical Maps Using Transformer-Based SegFormers]([https://www.mdpi.com/2220-9964/13/12/464])
+This repository contains the code for the paper [Automatic Road Extraction from Historical Maps Using Transformer-Based SegFormers](https://www.mdpi.com/2220-9964/13/12/464)
 
 
 
